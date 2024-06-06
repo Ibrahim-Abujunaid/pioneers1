@@ -1,0 +1,265 @@
+body{
+position: relative;
+height: 1806px;
+background: linear-gradient(90.36deg, #012A79 0.14%, #1F61DF 99.52%);
+}
+.logo{
+  display: flex;
+  justify-content: center;
+}
+.up{
+  background-image: url("/images/01\ -\ background\ 01\ \ 2.png");
+  height: 100vh;
+}
+.mid{
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.right p:first-child{
+
+width: 637px;
+height: 140px;
+right: 100px;
+top: 139px;
+font-family: 'Almarai';
+font-style: normal;
+font-weight: 400;
+font-size: 52px;
+line-height: 70px;
+/* or 135% */
+display: flex;
+text-align: right;
+color: #76FBF6;
+text-shadow: 0px 0px 10px #76FBF6;
+}
+.right p:nth-child(2){
+  /* باستخدام الذكاء الاصطناعي */
+width: 570px;
+height: 32px;
+right: 100px;
+margin-left: 10%;
+top: 303px;
+font-family: 'Almarai';
+font-style: normal;
+font-weight: 400;
+font-size: 52px;
+line-height: 32px;
+/* identical to box height, or 62% */
+display: flex;
+align-items: flex-end;
+text-align: right;
+color: #E132D5;
+text-shadow: 0px 0px 10px #FF28F0;
+}
+.right p:nth-child(3){
+  /* لأول مرة في الشرق الأوسط، تطرح أكاديمية الرواد للتدريب، دبلومات تدريبية في أهم التخصصات التي لها مستقبل وظيفي، باستخدام أحدث تقنيات وأدوات الذكاء الإصطناعي وبشهادة من أكبر الجامعات الأردنية. */
+
+width: 572px;
+height: 90px;
+
+font-family: 'Almarai';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+display: flex;
+align-items: flex-end;
+text-align: right;
+color: #FFFFFF;
+/* Inside auto layout */
+flex: none;
+order: 0;
+padding-left: 7%;
+flex-grow: 0;
+}
+.right p:nth-child(4){
+  /* بإمكانك الالتحاق في أي دبلوم تدريبي ترغب في دراسته، مهما كان تحصيلك العلمي في الثانوية العامة، ومن دون شروط مسبقة للدراسة. */
+width: 572px;
+height: 60px;
+padding-left: 7%;
+font-family: 'Almarai';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+display: flex;
+align-items: flex-end;
+text-align: right;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.arrow{
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1471px) {
+  .mid{
+    justify-content: center;
+  }
+}
+@media (max-width: 1013px) {
+  .arrow img{
+    width: 400px;
+  }
+}
+.down{
+
+display: flex;
+flex-direction: row-reverse;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 4px 28px;
+gap: 24px;
+
+position: absolute;
+width: 1318px;
+height: 608px;
+right: 35px;
+top: 1000px;
+overflow-x: auto;
+}
+.down::-webkit-scrollbar {
+  height: 7px;
+}
+
+/* Track */
+.down::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.down::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.down::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.first-property{
+/* Property 1=closed */
+min-width: 22%;
+height: 415px;
+right: 49px;
+top: 20px;
+
+border: 1px solid #76FBF6;
+filter: drop-shadow(0px 0px 10px #76FBF6);
+border-radius: 19.1161px;
+}
+.first-property h1{
+  color: white;
+  margin-left: 4%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.rec{
+  /* Rectangle 3 */
+
+position: absolute;
+width: 240px;
+height: 248px;
+right: 0px;
+top: 20px;
+
+background: url(/images/Rectangle\ 3.png);
+border-radius: 68.2718px 0px 0px 0px;
+z-index: 1;
+
+}
+.rec1{
+  
+position: absolute;
+width: 268px;
+height: 323px;
+left: calc(50% - 268px/2 - 6px);
+top: 55px;
+
+background: rgba(117, 142, 36, 0.8);
+border-radius: 0px;
+
+}
+.rec1 p{
+  position: absolute;
+  width: 211px;
+  height: 44px;
+  left: calc(50% - 211px/2 + 0.5px);
+  top: 200px;
+  
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.531px;
+  line-height: 24px;
+  /* or 125% */
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+.rec2{
+  /* Frame 141130 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 250px;
+height: 46px;
+right: 0px;
+top: 331px;
+
+position: absolute;
+width: 122.89px;
+height: 32.09px;
+
+
+background: #FFA000;
+border-radius: 16.3852px 0px 0px 0px;
+
+
+}
+.rec2 p{
+  /* Rectangle 6 */
+position: absolute;
+width: 62px;
+height: 22px;
+
+right: 20%;
+font-family: 'Almarai';
+font-style: normal;
+font-weight: 800;
+font-size: 12.9717px;
+line-height: 22px;
+/* identical to box height, or 168% */
+display: flex;
+align-items: flex-end;
+text-align: right;
+color: #FFFFFF;
+
+}
+@media (max-width:1470px) {
+  .up{
+    height: 120vh;
+  }
+  .down{
+    top: 1353px;
+  }
+  
+}
