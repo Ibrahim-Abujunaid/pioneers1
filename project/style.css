@@ -112,14 +112,12 @@ body {
 }
 .down {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 4px 28px;
   gap: 24px;
-
   position: absolute;
-  width: 1318px;
+  width: 90%;
   height: 608px;
   right: 35px;
   top: 1000px;
@@ -145,10 +143,12 @@ body {
 }
 
 .first-property {
-  min-width: 21.5%;
-  height: 415px;
+  direction: ltr !important;
+  max-width: 403px;
+  height: 534px;
+  flex: 0 0 auto;
   position: relative;
-  right: 49px;
+  right: 0;
   top: 20px;
   transition: transform 0.5s ease, min-width 1s ease, height 1s ease;
   border: 1px solid #76fbf6;
@@ -161,12 +161,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .first-property:not(.expanded):hover {
-  min-width: 23%;
-  height: 430px;
+  height: 564px;
 }
 .first-property:not(.expanded):hover .rec1 {
   margin-top: 10%;
-  transform: translateX(-9px);
+  transform: translateX(0px);
 }
 .first-property:not(.expanded):hover .rec1 p {
   position: fixed;
@@ -186,7 +185,7 @@ body {
   font-family: "Almarai";
   font-style: normal;
   font-weight: 800;
-  font-size: 11.9717px;
+  font-size: 16.9717px;
   line-height: 22px;
   display: flex;
   align-items: flex-end;
@@ -196,8 +195,8 @@ body {
 }
 .rec {
   position: absolute;
-  width: 240px;
-  height: 248px;
+  width: 331px;
+    height: 287px;
   right: 0px;
   top: 20px;
   background: url(images/Rectangle\ 3.png);
@@ -209,20 +208,23 @@ body {
 }
 .rec1 {
   position: absolute;
-  width: 90%;
-  height: 323px;
-  left: calc(50% - 268px / 2 - 6px);
-  top: 55px;
-  transition: transform 0.5s ease, margin-top 1s ease;
-  background: rgba(154, 187, 46, 0.8);
-  border-radius: 0px;
+    width: 97%;
+    height: 444px;
+    left: 1px;
+    top: 66px;
+    transition: transform 0.5s ease, margin-top 1s ease;
+    background: rgba(154, 187, 46, 0.8);
+    background-image: url("images/07\ -\ ring03\ 3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 30px;
 }
 .rec1 p {
   position: absolute;
   width: 211px;
   height: 44px;
   left: calc(50% - 211px / 2 + 0.5px);
-  top: 200px;
+  top: 244px;
   font-family: "Almarai";
   font-style: normal;
   font-weight: 400;
@@ -242,24 +244,22 @@ body {
   gap: 12px;
   transition: transform 0.5s ease, margin-top 1s ease;
   position: absolute;
-  width: 250px;
-  height: 46px;
   right: 0px;
-  top: 331px;
-  width: 122.89px;
-  height: 32.09px;
+  top: 412px;
+  width: 136.89px;
+  height: 41.09px;
   background: #ffa000;
   border-radius: 16.3852px 0px 0px 0px;
 }
 .rec2 p {
   position: absolute;
-  width: 62px;
+  width: 76px;
   height: 22px;
   right: 20%;
   font-family: "Almarai";
   font-style: normal;
   font-weight: 800;
-  font-size: 12.9717px;
+  font-size: 16.9717px;
   line-height: 22px;
   display: flex;
   align-items: flex-end;
@@ -269,10 +269,14 @@ body {
 
 .first-property.expanded {
   min-width: 100%;
-  height: 740vh;
-  right: 3%;
+  height: 100vh;
+  overflow-y: scroll;
+  right: 0;
   top: 0;
   transition: min-width 2s ease, height 1s ease;
+}
+.first-property.expanded::-webkit-scrollbar {
+  display: none;
 }
 .first-property.expanded .rec {
   width: 90%;
@@ -296,11 +300,9 @@ font-style: normal;
 font-weight: 400;
 font-size: 320%;
 line-height: 70px;
-/* identical to box height, or 135% */
 display: flex;
 align-items: flex-end;
 text-align: right;
-
 color: #FFFFFF;
 
 }
@@ -621,4 +623,24 @@ text-align: end;
     font-size: 202%;
     text-align: center;
   }
+}
+
+
+.swiper-container {
+  display: flex;
+  flex-direction: row-reverse;
+ min-width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-wrapper{
+  min-width: 100%;
+}
+.swiper-slide.swiper-slide-active {
+  width: 100% 
 }
