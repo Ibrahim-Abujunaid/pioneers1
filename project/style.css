@@ -122,6 +122,7 @@ body {
   right: 35px;
   top: 1000px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .down::-webkit-scrollbar {
   height: 7px;
@@ -269,23 +270,41 @@ body {
 
 .first-property.expanded {
   min-width: 100%;
-  height: 100vh;
+  height: 900px;
   overflow-y: scroll;
   right: 0;
   top: 0;
   transition: min-width 2s ease, height 1s ease;
 }
 .first-property.expanded::-webkit-scrollbar {
-  display: none;
+  width: 8px;
+  margin-right: 2%;
+}
+
+/* Track */
+.first-property.expanded::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+  border-radius: 8px; /* Match the rounded corners */
+}
+
+/* Handle */
+.first-property.expanded::-webkit-scrollbar-thumb {
+  background: #c1c1c185; 
+  border-radius: 8px; /* Match the rounded corners */
+}
+
+/* Handle on hover */
+.first-property.expanded::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a87a; 
 }
 .first-property.expanded .rec {
   width: 90%;
-  height: 60vh;
+  height: 500px;
   z-index: 1;
 }
 .first-property.expanded .rec1 {
   left: 0;
-  height: 140vh;
+  height: 1160px;
   border-radius: 0px 0px 100px 0px;
 }
 .first-property.expanded .rec1 p{
@@ -307,7 +326,7 @@ color: #FFFFFF;
 
 }
 .first-property.expanded .rec2{
-  top: 880px;
+  top: 800px;
   height: 57px;
   width: 15%;
   right: 15%;
@@ -390,23 +409,57 @@ border: 3px solid #76FBF6;
 }
 .pharagraph1 p{
     margin-top: 50%;
-  width: 800px;
+  width: 1096px;
 height: 210px;
 font-family: 'Almarai';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
-line-height: 40px;
+font-size: 24px;
+line-height: 50px;
+direction: rtl;
 /* or 167% */
 display: none;
 align-items: flex-end;
 text-align: justify;
 color: #FFFFFF;
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
 
+
+}
+@media (max-width: 1527px) {
+  .pharagraph1 p{
+    width: 903px;
+    margin-top: 66%;
+  }
+}
+@media (max-width: 1330px) {
+  .first-property.expanded .rec2::before{
+    font-size: 100%;
+  }
+  .first-property.expanded .rec1 p{
+    font-size: 220%;
+  }
+  .pharagraph1 p{
+    width: 724px;
+    margin-top: 85%;
+    font-size: 16px;
+  }
+  .rec2 .non{
+    margin-right: 295%;
+  }
+}
+@media (max-width: 1207px) {
+  #img2{
+    width: 100%;
+  }
+}
+@media (max-width: 1016px) {
+  .pharagraph1 p{
+    width: 603px;
+    margin-top: 114%;
+  }
+  .first-property.expanded .rec2{
+    width: 16%;
+  }
 }
 
 .first-property.expanded .pharagraph1 p{
@@ -424,8 +477,8 @@ flex-grow: 0;
 .university{
   display: none;
   position: absolute;
-width: 1218px;
-height: 1362px;
+width: 73%;
+height: 1191px;
 right: 80px;
 top: 2410px;
 
@@ -486,15 +539,16 @@ color: #FFFFFF;
 flex-direction: row;
 justify-content: flex-end;
 align-items: flex-start;
+margin-top: 6%;
 padding: 4px 4px 4px 20px;
 gap: 12px;
 
-position: absolute;
+
 width: 1218px;
 left: calc(50% - 1218px/2);
 top: 29.55%;
 bottom: -0.95%;
-overflow-x: scroll;
+overflow-x: hidden;
 }
 .afory div{
 min-width: 340px;
@@ -509,13 +563,9 @@ flex-direction: row;
 align-items: flex-start;
 padding: 4px 20px 4px 4px;
 gap: 12px;
-
-position: absolute;
 width: 1218px;
-left: calc(50% - 1218px/2);
-top: 70.55%;
-bottom: -0.95%;
-overflow-x: scroll;
+margin-top: 4%;
+overflow-x: hidden;
 }
 .afory1 div{
   min-width: 340px;
@@ -535,13 +585,11 @@ overflow-x: scroll;
 }
 .certificate{
   display: none;
-  position: absolute;
 width: 90%;
-height: 1048px;
-right: 0px;
-top: 4791px;
+margin-left: 10%;
 background: rgba(154, 187, 46, 0.8);
 border-radius: 100px 0px 0px 0px;
+padding-bottom: 5%;
 }
 .first-property.expanded .certificate{
   display: block;
@@ -586,7 +634,7 @@ text-align: end;
   padding: 0 17% 0 17%;
 }
 .bank{
-  margin-top: 1240px;
+  margin-top: 100px;
   display: none;
   justify-content: center;
 }
@@ -643,4 +691,17 @@ text-align: end;
 }
 .swiper-slide.swiper-slide-active {
   width: 100% 
+}
+@media (max-width: 1268px){
+  #im{
+    width: 100%;
+  }
+  #ba{
+    width: 100%;
+  }
+  .certificate1{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 13%;
+  }
 }
